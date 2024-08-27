@@ -1,0 +1,361 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f7f7f7;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.con2 h1 {
+    font-family: "Times New Roman", Times, serif;
+    color: #cfcdcb; 
+    font-size: 48px; 
+    font-weight: bold;
+    text-align: center; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 20px; 
+}
+
+.con3 h2 {
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 24px; 
+    color: #333; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+}
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+nav ul li:first-child {
+    margin-left: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+color: #999;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    padding: 10px 0;
+}
+
+.menu-item {
+    margin-right: 20px;
+}
+
+.menu-item:last-child {
+    margin-right: 0;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.menu-item a:hover {
+    color:#999;
+}
+
+.hero {
+    background: url('image/header.webp') center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.shop {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.shop:hover {
+    background: #555;
+}
+
+.products {
+    padding: 50px 0;
+}
+
+.products h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.product {
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.image-container img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+.product-name {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+.price {
+    font-size: 1.2em;
+    color: red;
+}
+
+.price del {
+    color: #333;
+}
+.buy-btn {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease; 
+}
+
+.product:hover .buy-btn {
+    opacity: 1;
+}
+
+.view-all-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.view-all {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.view-all:hover {
+    background-color: #555;
+}
+
+
+.image-container {
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+    margin-top: 50px; 
+}
+
+.category {
+    display: inline-block;
+    text-align: center; 
+}
+
+.category img {
+    max-width: 200%; 
+    max-height: 450px; 
+    margin-bottom: 10px; 
+    filter: grayscale(25%);
+
+    
+}
+
+.category p {
+    margin: 0;
+    font-family: "Times New Roman", Times, serif; 
+    font-size: 24px; 
+    font-weight: 50; 
+    color: #333; 
+}
+footer {
+    background-color: #4d4c4c;
+    color: #fff;
+    padding: 50px 0;
+}
+.container2 {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.container h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.payment-methods ul,
+.social-media ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.payment-methods ul li,
+.social-media ul li {
+    display: inline;
+    margin-right: 10px;
+}
+.social-media ul li img{
+    transition: transform 0.4s ease;
+
+}
+.social-media ul li img:hover{
+    transform: rotate(360deg);
+}
+.subscribe form {
+    display: flex;
+}
+
+.subscribe input[type="email"] {
+    width: 200px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.subscribe button {
+    background-color: #706f6f;
+    color: #c0bebe;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.subscribe button:hover {
+    background-color: #777;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 20px;
+}
+.copyright a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    
+}
+.copyright .sidebar{
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+.image-container img:hover{
+    transform: scale(1.1) ;
+    opacity: 0.9;
+    cursor: pointer;
+    padding-bottom: 10px;
+    filter: grayscale(0%);
+
+}
+
+.product-row .product::before{
+    content: "sale";
+    width: 48px;
+    height: 31px;
+    background-color: #900;
+    position: absolute;
+    color: white;
+    right: 6px;
+    top: 7px;
+    font-family: system-ui;
+    font-size: 18px;
+}
+.copyright .sidebar a:hover{
+    color: black;
+}
+.container ul li .si img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    right: 62px;
+    top: 25px;
+}
+.container ul li .sh img{
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 15px;
+    top: 25px;
+}
+.container ul li .si{
+    margin-left: 30px;
+}.container ul li .sh img:hover ,.container ul li .si img:hover{
+    transform: scale(1.04) ;
+}
+.link{
+    display: inline-block;
+}
